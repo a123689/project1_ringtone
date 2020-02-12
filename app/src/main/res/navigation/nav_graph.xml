@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dat.project1_ringtone.View.Fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_listRingtoneFragment"
+            app:destination="@id/listRingtoneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_setRingtoneFragment"
+            app:destination="@id/setRingtoneFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listRingtoneFragment"
+        android:name="com.example.dat.project1_ringtone.View.Fragment.ListRingtoneFragment"
+        android:label="fragment_list_ringtone"
+        tools:layout="@layout/fragment_list_ringtone" >
+        <action
+            android:id="@+id/action_listRingtoneFragment_to_setRingtoneFragment"
+            app:destination="@id/setRingtoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setRingtoneFragment"
+        android:name="com.example.dat.project1_ringtone.View.Fragment.SetRingtoneFragment"
+        android:label="fragment_set_ringtone"
+        tools:layout="@layout/fragment_set_ringtone" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.dat.project1_ringtone.View.Fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

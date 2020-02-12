@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog"
+    android:layout_height="680dp">
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_dialog_top"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="Try Your Ringtone"
+            android:textColor="@color/colorWhile"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imCloseSms"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/notification"
+        android:layout_height="370dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="0.5dp"></View>
+
+    <Button
+        android:id="@+id/btnTrySms"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_try"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Try it now"
+        android:textColor="@color/colorWhile"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLaterSms"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_later"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Later"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+</LinearLayout>

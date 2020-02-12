@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragment.SetRingtoneFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/reativelayout"
+        android:layout_marginBottom="17dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_back"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imBack"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/imBack"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="Ringtone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/reativelayout"
+        android:id="@+id/imPlaySetringtone"
+        android:background="@drawable/ic_pause_button"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tvSetRingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imPlaySetringtone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Ring 1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear"
+        android:layout_below="@id/tvSetRingName"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_heart"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imHeart"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#979797"
+            android:text="0:00"
+            android:id="@+id/tvStart"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_width="270dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/seekBar"
+            android:progressTint="@color/colorPrimaryDark"
+            android:thumbTint="@color/colorPrimaryDark"
+            android:progressBackgroundTint="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#979797"
+            android:text="0:00"
+            android:id="@+id/tvEnd"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="Set as:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/tvset"
+        android:layout_marginTop="20dp"
+        android:id="@+id/li"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="70dp"
+                android:id="@+id/imringTone"
+                android:background="@drawable/ic_ringtone"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Ringtone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_width="70dp"
+                android:id="@+id/imAlarm"
+                android:background="@drawable/ic_alarm"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Alarm Tone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/li"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="70dp"
+                android:id="@+id/imSms"
+                android:background="@drawable/ic_simple"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="SMS/Notification"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_width="70dp"
+                android:id="@+id/imContact"
+                android:background="@drawable/ic_contact"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Contact Ringtone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

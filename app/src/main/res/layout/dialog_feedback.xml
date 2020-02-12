@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog"
+    android:layout_height="400dp">
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_dialog_top"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="Send Us Your Feedback"
+            android:textColor="@color/colorWhile"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/imCloseFeedback"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edFeedback"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#F1F1F1"
+        android:fontFamily="@font/ubuntu_light"
+        android:gravity="top"
+        android:hint="Give us your feedback..."
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:paddingLeft="8dp"
+        android:paddingTop="9dp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button_send"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="send"
+        android:textColor="@color/colorWhile" />
+</LinearLayout>
